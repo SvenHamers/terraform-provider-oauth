@@ -1,4 +1,4 @@
 # terraform-provider-oauth
 
 
-provider for getting bearer tokens
+provider for getting oauth client credentials access tokens
