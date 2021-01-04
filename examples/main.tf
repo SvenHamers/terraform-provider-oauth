@@ -1,11 +1,4 @@
-terraform {
-  required_providers {
-    oauth = {
-      source = "terraform.ebmracecloud.nl/embracecloud/oauth"
-      version = "1.14.1"
-    }
-  }
-}
+
 
 provider "oauth" {
 
