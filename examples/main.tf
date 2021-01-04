@@ -13,9 +13,9 @@ provider "oauth" {
 
 
 data "oauth_token" "example" {
-      client_id = "root"
-    client_secret = "Ez14ROb6CiFWC27e"
-    token_endpoint = "https://squidex-gewoon.staging.embracecloud.io/identity-server/connect/token"
+      client_id = "xxxxxxx"
+    client_secret = "xxxxx"
+    token_endpoint = "https://test.test.io/identity-server/connect/token"
     scopes = [""]
 }
 
