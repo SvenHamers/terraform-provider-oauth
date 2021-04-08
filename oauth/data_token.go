@@ -50,6 +50,12 @@ func dataSourceTokenRead(ctx context.Context, d *schema.ResourceData, m interfac
 	clientID := d.Get("client_id").(string)
 	clientSecret := d.Get("client_secret").(string)
 	scopes := d.Get("scopes").([]interface{})
+	
+	val, present := os.LookupEnv("oauth_client_secret")
+	
+	if present == true {
+        clientSecret = val
+    	}
 
 	opt := &apiClientOpt{
 		oauth_client_id:     clientID,
