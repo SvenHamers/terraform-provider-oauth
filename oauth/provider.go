@@ -13,7 +13,8 @@ func Provider() *schema.Provider {
 		Schema:       map[string]*schema.Schema{},
 		ResourcesMap: map[string]*schema.Resource{},
 		DataSourcesMap: map[string]*schema.Resource{
-			"oauth_token": dataSourceToken(),
+			"oauth_token":         dataSourceToken(),
+			"oauth_configuration": dataSourceConfiguration(),
 		},
 		ConfigureContextFunc: providerConfigure,
 	}
